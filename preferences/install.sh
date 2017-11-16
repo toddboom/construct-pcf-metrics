@@ -11,5 +11,4 @@ cp -f "$dir/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
 /usr/libexec/PlistBuddy -c "Merge '$dir/Solarized Dark.itermcolors' :'Custom Color Presets':'Solarized Dark'" ~/Library/Preferences/com.googlecode.iterm2.plist
 
 open /Applications/Docker.app
-open /Applications/Screenhero.app
 open /Applications/ShiftIt.app
