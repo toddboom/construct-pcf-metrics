@@ -34,13 +34,21 @@ Once everything has finished installing, you can delete `/tmp/construct.zip` and
 
 ### 3. Pull down the repos
 
-Once all units are installed, you can run `all_the_repos` to pull down all your team-specific
-repositories.
+this may have happened automatically by the iterm.script running ./post-install, but if that failed, run the post-install script manually.
+this script runs the all-the-repos script and installs some more speccific dependencies
 
 ### 4. Restart your computer
 
 It's a good idea to restart after everything is successfully installed. This will
 make sure all of the keyboard settings get picked up correctly.
+
+### 5. Regenerate the databases
+
+```
+cd ~/workspace/apm-ui/metrics
+lpass login <you>@pivotal.io
+scripts/reset.sh
+```
 
 ## Usage & Development
 
